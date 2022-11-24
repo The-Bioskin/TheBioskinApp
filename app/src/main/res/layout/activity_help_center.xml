@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpCenter">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/helpCenter"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/item_corner"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="16dp"
+        android:hint="Tìm kiếm"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imvModel"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/ic_baseline_headset_mic_24"
+        app:layout_constraintBottom_toTopOf="@+id/txtSearch"
+        app:layout_constraintEnd_toEndOf="@+id/txtSearch" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toTopOf="@+id/imvModel" />
+
+    <TextView
+        android:id="@+id/txtFrequentlyAsked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CÂU HỎI THƯỜNG GẶP"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+    <TextView
+        android:id="@+id/txtQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hướng dẫn mua hàng trực tuyến"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintStart_toStartOf="@+id/txtFrequentlyAsked"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrequentlyAsked" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#C8C8D5"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion1"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion1"/>
+    <TextView
+        android:id="@+id/txtQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Làm sao để nhập được Mã khuyến mãi?"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion1"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#C8C8D5"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion2"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion2"/>
+    <TextView
+        android:id="@+id/txtQuestion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Tôi có thể đồng kiểm hạn sử dụng của sản phẩm"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion2"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion2" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#C8C8D5"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion3"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion3"/>
+    <TextView
+        android:id="@+id/txtQuestion4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Các phương thức nào mà The Bioskin hỗ trợ"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion3"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion3" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#C8C8D5"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion4"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion4"/>
+    <TextView
+        android:id="@+id/txtQuestion5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Cách thức trả hàng của The Bioskin như thế nào?"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion4"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion4" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#C8C8D5"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion5"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion5"/>
+    <TextView
+        android:id="@+id/txtAnotherQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bạn vẫn chưa tìm thấy câu trả lời thích hợp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtQuestion5"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion5" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtAnotherQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnotherQuestion" />
+</androidx.constraintlayout.widget.ConstraintLayout>

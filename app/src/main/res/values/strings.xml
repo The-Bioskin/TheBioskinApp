@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TheBioskin</string>
+    <string name="helpCenter">Trung tâm trợ giúp</string>
+    <string name="welcome"><br>Xin chào <b>Như Hằng</b>, \n</br><br>Hãy để The Bioskin giúp bạn</br></string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="itemLanguage1">Tiếng Việt</string>
+    <string name="itemLanguage2">Tiếng Anh</string>
 </resources>
