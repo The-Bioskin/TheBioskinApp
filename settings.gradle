@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TheBioskin"
+rootProject.name = "project"
 include ':app'
