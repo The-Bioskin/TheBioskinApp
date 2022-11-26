@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_corner"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imvDiscount"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/discount_logo"
+                android:background="@drawable/item_corner"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtVoucherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giảm ngay 50.000đ cho người mới"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/txtVoucherValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn hàng tối thiểu 299K "
+                    android:textSize="14sp"
+                    android:textColor="#7D8FAB"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtUseVoucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dùng ngay"
+                    android:textColor="#F38375"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="end"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
