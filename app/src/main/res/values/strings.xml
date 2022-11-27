@@ -5,4 +5,12 @@
     <string name="language">Ngôn ngữ</string>
     <string name="itemLanguage1">Tiếng Việt</string>
     <string name="itemLanguage2">Tiếng Anh</string>
-</resources>
+    <string name="Mota"> <u>MÔ TẢ:</u></string>
+    <string name="CongDung"> <u>CÔNG DỤNG CHÍNH</u></string>
+    <string name="CachDung"> <u>CÁCH DÙNG:</u></string>
+    <string name="ThanhPhan"><b> <u>Thành phần:</u></b></string>
+    <string name="QuyCach"><b> <u>Quy cách:</u></b></string>
+    <string name="BaoQuan"><b> <u>Bảo quản:</u></b></string>
+
+
+    </resources>

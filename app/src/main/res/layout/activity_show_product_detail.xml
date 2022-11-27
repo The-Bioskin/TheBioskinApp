@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowProductDetail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFE3E8"
+                    android:layout_marginTop="150dp"
+                    tools:ignore="MissingPadding"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chi tiết sản phẩm"
+                    android:textSize="20sp"
+                    android:textColor="#131111"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@id/view_line"
+                    app:layout_constraintRight_toRightOf="@id/view_line"
+                    app:layout_constraintBottom_toBottomOf="@id/view_line"
+                    app:layout_constraintTop_toTopOf="@id/view_line"
+                    app:layout_constraintHorizontal_bias="0.2"/>
+                <ImageView
+                    android:id="@+id/imv_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back"
+                    app:layout_constraintLeft_toLeftOf="@id/view_line"
+                    app:layout_constraintTop_toTopOf="@id/view_line"
+                    app:layout_constraintBottom_toBottomOf="@id/view_line"
+                    android:layout_marginLeft="5dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imv_tinhdaubuoi"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/tinhdaubuoi" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/imv_tinhdaubuoi"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nước dưỡng tóc tinh dầu bưởi Cocoon 140ml"
+                        android:textStyle="bold"
+                        android:textSize="19sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.000đ"
+                        android:textSize="19sp"
+                        android:layout_marginTop="5dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <View
+                            android:id="@+id/view_line1"
+                            android:layout_width="140dp"
+                            android:layout_height="40dp"
+                            android:background="#9EDCDCDC"
+                            android:layout_marginTop="150dp"
+                            tools:ignore="MissingPadding" />
+                        <ImageView
+                            android:id="@+id/imv_SubtractProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/view_line1"
+                            app:layout_constraintBottom_toBottomOf="@id/view_line1"
+                            app:layout_constraintLeft_toLeftOf="@id/view_line1"
+                            android:src="@drawable/ic_minus"
+                            android:layout_marginLeft="5dp"/>
+                        <TextView
+                            android:id="@+id/txt_Quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="19sp"
+                            app:layout_constraintLeft_toLeftOf="@id/view_line1"
+                            app:layout_constraintRight_toRightOf="@id/view_line1"
+                            app:layout_constraintBottom_toBottomOf="@id/view_line1"
+                            app:layout_constraintTop_toTopOf="@id/view_line1"
+                            android:textColor="#000000"/>
+                        <ImageView
+                            android:id="@+id/imv_AddProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@id/view_line1"
+                            app:layout_constraintTop_toTopOf="@id/view_line1"
+                            app:layout_constraintRight_toRightOf="@id/view_line1"
+                            android:src="@drawable/ic_add"
+                            android:layout_marginRight="5dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/view_line2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#F8ECEA"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingPadding"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:id="@+id/txt_Describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Mota"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txt_DescribeinDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Với tinh dầu bưởi nguyên chất từ vỏ bưởi, kết hợp với hoạt chất Xylishine (chiết xuất từ gỗ và tảo nâu Pelvetia Canaliculata) và Vitamin B5 (Panthenol), nước dưỡng tóc dầu bưởi giúp tóc giảm gãy rụng và khô xơ, cung cấp dưỡng chất giúp tóc luôn suôn mượt, mềm mại.
+                    \n
+                    \n
+- Tinh dầu bưởi được trích ly từ vỏ bưởi chứa hàm lượng lớn limonene có khả năng ức chế mạnh mẽ enzyme 5-alpha reductase loại 2 trên da đầu - nguyên nhân chính gây rụng tóc
+\n
+\n
+- Đồng thời do có tính kháng khuẩn và chống oxy hóa cao, tinh dầu vỏ bưởi sẽ mang lại cho bạn da đầu và tóc khỏe manh
+\n
+\n
+- Không chứa cồn - Không sulfate
+\n
+\n
+- Không dầu khoáng - Không parabe"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Describe"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CongDung"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/txt_DescribeinDetail"/>
+                <TextView
+                    android:id="@+id/txt_Functionindetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Tăng cường độ bóng và chắc khỏe của tóc - Cung cấp dưỡng chất giúp tóc suôn mượt và mềm mại - Lý tưởng cho: Tóc yếu đang gặp tình trạng gãy rụng cần được phục hồi. Tóc cần được nuôi dưỡng để mọc dày và chắc khỏe trở lại.
+\n
+\n
+- Giảm gãy rụng tóc.
+"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Function"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_Howtouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CachDung"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Functionindetail"/>
+                <TextView
+                    android:id="@+id/txt_Howtouseindetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="
+Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và mái tóc, tránh vùng mắt. Mát-xa nhẹ nhàng để dưỡng chất thấm sâu. Lượng dùng: 3-4 lần xịt đều lên mái tóc. Dùng mỗi ngày để đạt hiệu quả tốt nhất"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Howtouse"
+                    android:layout_marginTop="10dp"/>
+                <LinearLayout
+                    android:id="@+id/ll_Info"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Howtouseindetail">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ThanhPhan"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text=" Xylishiner, Vitamin B5 (D-panthenol)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/QuyCach"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text=" Chai, 140ml"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BaoQuan"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text=" Nơi thoáng mát, tránh tiếp xúc trực tiếp với ánh sáng mặt trời."/>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_MoreRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THÊM ĐÁNH GIÁ +"
+                    android:textSize="24dp"
+                    android:textColor="#EF6351"
+                    android:background="@drawable/item_corner2"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_Info"
+                    android:layout_marginTop="15dp"
+                   />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/view_line3"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#F8ECEA"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingPadding"/>
+            <androidx.constraintlayout.widget.Constraints
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm liên quan"
+                    android:textSize="23sp"
+                    android:textColor="#0C0C0C"
+                    />
+            </androidx.constraintlayout.widget.Constraints>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
