@@ -90,13 +90,16 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:text="ĐĂNG NHẬP"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:background="@drawable/item_corner1"/>
         <TextView
             android:id="@+id/txt_ForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Quên mật khẩu?"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="60dp"
             android:textColor="#F7A399"
             android:textSize="18dp"/>
     </LinearLayout>
