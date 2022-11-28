@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             tools:ignore="MissingConstraints"
             android:orientation="vertical"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="19dp">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -310,28 +310,34 @@ Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và m�
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 android:padding="15dp">
-                <Button
-                    android:id="@+id/btn_AddtoCart"
-                    android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="THÊM VÀO GIỎ HÀNG"
-                    android:textSize="18dp"
-                    android:textColor="#EF6351"
-                    android:background="@drawable/item_corner4"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"/>
-                <Button
-                    android:id="@+id/btn_BuyNow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MUA HÀNG"
-                    android:textSize="18dp"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/item_corner3"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:layout_marginLeft="80dp"/>
-
+                    android:id="@+id/cl_0">
+                    <Button
+                        android:id="@+id/btn_AddtoCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="THÊM VÀO GIỎ HÀNG"
+                        android:textSize="18dp"
+                        android:textColor="#EF6351"
+                        android:background="@drawable/item_corner4"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/cl_0"/>
+                    <Button
+                        android:id="@+id/btn_BuyNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MUA HÀNG"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/item_corner3"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="80dp"
+                        app:layout_constraintRight_toRightOf="@id/cl_0"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
