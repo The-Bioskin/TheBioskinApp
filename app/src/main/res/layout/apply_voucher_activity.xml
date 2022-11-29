@@ -52,7 +52,8 @@
                     android:padding="10dp"
                     android:textSize="15dp"
                     android:inputType="text"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/custome_edt"/>
 
                 <ImageView
                     android:id="@+id/imv_Clear"
