@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Account">
+    tools:context=".Order">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -27,68 +27,61 @@
             android:orientation="vertical">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:outlineSpotShadowColor="@color/black">
+
                 <View
+                    android:id="@+id/view_line"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="#FFE3E8"/>
-                <TextView
-                    android:id="@+id/txtAccount"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Tài khoản"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:background="#FFE3E8"
+                    android:layout_marginTop="150dp"
+                    tools:ignore="MissingPadding"/>
 
                 <ImageView
-                    android:id="@+id/imvAvatar"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="45dp"
-                    android:src="@drawable/user_avatar"
+                    android:id="@+id/imvBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"
-                    app:layout_constraintTop_toBottomOf="@+id/txtAccount" />
-
+                    app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
                 <TextView
-                    android:id="@+id/txtNameAccount"
-                    android:layout_width="match_parent"
+                    android:id="@+id/txtOrder"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Nguyễn Như Hằng"
+                    android:padding="10dp"
+                    android:text="ĐƠN HÀNG CỦA TÔI"
                     android:textColor="@color/black"
-                    android:textSize="24sp"
-                    app:layout_constraintTop_toBottomOf="@+id/imvAvatar" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="#F8ECEA"
-                    app:layout_constraintBottom_toTopOf="@+id/lnMain"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtNameAccount" />
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/imvBack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imvOrder"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/Order"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:ignore="MissingConstraints"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOrder" />
+
                 <LinearLayout
                     android:id="@+id/lnMain"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="40dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtNameAccount">
+                    app:layout_constraintTop_toBottomOf="@+id/imvOrder">
                     <LinearLayout
-                        android:id="@+id/lnMyOrder"
+                        android:id="@+id/lnWaiting"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -98,29 +91,39 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imvMyOrder"
+                                android:id="@+id/imvWaiting"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:padding="10dp"
-                                android:src="@drawable/ic_baseline_receipt_24"
+                                android:src="@drawable/ic_baseline_waiting_24"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/txtOrderList"
+                                android:id="@+id/txtWaiting"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Đơn hàng của tôi"
+                                android:text="Chờ xác nhận"
                                 android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvMyOrder"
+                                app:layout_constraintStart_toEndOf="@+id/imvWaiting"
                                 app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imvNoti"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imvNext1"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
                             <ImageView
                                 android:id="@+id/imvNext1"
@@ -143,7 +146,7 @@
 
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/lnMyFavorProduct"
+                        android:id="@+id/lnDelivery"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -153,28 +156,28 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imvMyFavorProduct"
+                                android:id="@+id/imvDelivery"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:padding="10dp"
-                                android:src="@drawable/ic_baseline_favorite_24"
+                                android:src="@drawable/ic_baseline_delivery_24"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/txtMyProduct"
+                                android:id="@+id/txtDelivery"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Sản phẩm yêu thích"
+                                android:text="Đang giao hàng"
                                 android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvMyFavorProduct"
+                                app:layout_constraintStart_toEndOf="@+id/imvDelivery"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
@@ -198,7 +201,7 @@
 
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/lnMyVoucher"
+                        android:id="@+id/lnDone"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -208,28 +211,28 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imvMyVoucher"
+                                android:id="@+id/imvDone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:padding="10dp"
-                                android:src="@drawable/ic_baseline_discount_24"
+                                android:src="@drawable/ic_baseline_finish_24"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/txtVoucher"
+                                android:id="@+id/txtDone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Voucher của tôi"
+                                android:text="Hoàn thành"
                                 android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvMyVoucher"
+                                app:layout_constraintStart_toEndOf="@+id/imvDone"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
@@ -254,7 +257,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/lnHelpCenter"
+                        android:id="@+id/lnRefunds"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -264,28 +267,28 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imvHelpCenter"
+                                android:id="@+id/imvRefunds"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:padding="10dp"
-                                android:src="@drawable/ic_baseline_headset_mic_24"
+                                android:src="@drawable/ic_baseline_refund24"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/txtHelpCenter"
+                                android:id="@+id/txtRefunds"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Trung tâm trợ giúp"
+                                android:text="Trả hàng/ Hoàn tiền"
                                 android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvHelpCenter"
+                                app:layout_constraintStart_toEndOf="@+id/imvRefunds"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
@@ -309,7 +312,7 @@
 
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/lnLanguage"
+                        android:id="@+id/lnCancelled"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -319,28 +322,28 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imvLanguage"
+                                android:id="@+id/imvCancelled"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:padding="10dp"
-                                android:src="@drawable/ic_baseline_language_24"
+                                android:src="@drawable/ic_baseline_canceled_24"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/txtLanguage"
+                                android:id="@+id/txtCancelled"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Ngôn ngữ"
+                                android:text="Đơn đã hủy"
                                 android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvLanguage"
+                                app:layout_constraintStart_toEndOf="@+id/imvCancelled"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
@@ -353,115 +356,6 @@
                                 app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="#C8C8D5"
-                            app:layout_constraintBottom_toBottomOf="@+id/lnRank" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/lnChangePassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imvChangePassword"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:padding="10dp"
-                                android:src="@drawable/ic_baseline_lock_person_24"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/txtChangePassword"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:text="Đổi mật khẩu"
-                                android:textSize="18sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvChangePassword"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <ImageView
-                                android:id="@+id/imvNext6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="#C8C8D5"
-                            app:layout_constraintBottom_toBottomOf="@+id/lnRank" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/lnLogout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/imvLogout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:padding="10dp"
-                                android:src="@drawable/ic_baseline_logout_24"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/txtLogout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:text="Đăng xuất"
-                                android:textSize="18sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/imvLogout"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="#C8C8D5"
-                            app:layout_constraintBottom_toBottomOf="@+id/lnRank" />
 
                     </LinearLayout>
 

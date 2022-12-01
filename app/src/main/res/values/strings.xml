@@ -5,4 +5,9 @@
     <string name="language">Ngôn ngữ</string>
     <string name="itemLanguage1">Tiếng Việt</string>
     <string name="itemLanguage2">Tiếng Anh</string>
+
+    <!-- Rating -->
+    <string name="rating_title">Đánh giá sản phẩm</string>
+    <string name="rating_content">Chọn sao để xếp hạng sản phẩm</string>
+    <string name="rating_submit">GỬI ĐÁNH GIÁ CỦA BẠN</string>
 </resources>
