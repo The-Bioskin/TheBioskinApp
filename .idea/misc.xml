@@ -6,6 +6,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/custom_thumb.xml" value="0.2195" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/custome_edt.xml" value="0.2195" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/ic_check_box.xml" value="0.192" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_account.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_change_passwordd.xml" value="0.25" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_filter.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_help_center.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_language.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_logout.xml" value="0.25" />
