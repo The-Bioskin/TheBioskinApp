@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/lnTayTrang"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/item_corner"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/imvTayTrang"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/TayTrang" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/txtTayTrang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tẩy trang"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtAmount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1126 sản phẩm"
+                android:textSize="14sp"
+                android:textColor="#7D8FAB"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
