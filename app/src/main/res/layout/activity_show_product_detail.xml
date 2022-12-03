@@ -139,7 +139,7 @@
                     android:id="@+id/txt_Describe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Mota"
+                    android:text="Mô tả"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <TextView
@@ -165,7 +165,7 @@
                     android:id="@+id/txt_Function"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/CongDung"
+                    android:text="Công dụng"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
@@ -185,7 +185,7 @@
                     android:id="@+id/txt_Howtouse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/CachDung"
+                    android:text="Cách dùng"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
@@ -212,7 +212,7 @@ Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và m�
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ThanhPhan"
+                            android:text="Thành phần"
                             android:textSize="17sp"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -228,7 +228,7 @@ Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và m�
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/QuyCach"
+                            android:text="Quy cách"
                             android:textSize="17sp"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -244,7 +244,7 @@ Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và m�
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/BaoQuan"
+                            android:text="Bảo quản"
                             android:textSize="17sp"/>
                         <TextView
                             android:layout_width="wrap_content"

@@ -83,8 +83,9 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_height="170dp"
-                android:layout_gravity="center"
-                android:background="@drawable/HomeCover"/>
+                android:layout_gravity="center
+"
+                android:background="@drawable/homecover"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
