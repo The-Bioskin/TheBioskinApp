@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="#FFE3E8">
+        <ImageView
+            android:id="@+id/imv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/imv_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:text="@string/rating_title"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/img_sanpham"
+            android:layout_width="243dp"
+            android:layout_height="243dp"
+            android:src="@drawable/img_danhgiasanpham" />
+        <TextView
+            android:text="@string/rating_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#F38578"
+            android:text="@string/rating_submit"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
