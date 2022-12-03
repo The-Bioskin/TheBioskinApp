@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/spc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten san pham"
+            android:textSize="20sp"
+            android:id="@+id/txtProductName"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#B8BBC6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="#7E7D7D"
+                android:hint="Phân loại: xxx ml"/>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#B8BBC6"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="xxx.xxxđ"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:stretchColumns="*">
+    <TableRow>
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn mua"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_baseline_do_disturb_on_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="1"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_baseline_add_circle_24"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="end"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_baseline_restore_from_trash_24"/>
+
+    </TableRow>
+</TableLayout>
+
+</LinearLayout>
+
+</LinearLayout>
