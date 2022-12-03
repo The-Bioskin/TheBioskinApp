@@ -131,9 +131,9 @@
                     app:layout_constraintTop_toTopOf="@id/txt_More"
                     app:layout_constraintBottom_toBottomOf="@id/txt_More"/>
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rclBestSeller"
+                    android:id="@+id/rclCatogories"
                     android:layout_width="390dp"
-                    android:layout_height="120dp"
+                    android:layout_height="180dp"
                     android:orientation="horizontal"
                     android:layout_marginTop="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -142,7 +142,7 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/txt_ListProduct"
                     app:layout_constraintVertical_bias="0.0"
-                    tools:listitem=""/>
+                    tools:listitem="@layout/item_list_product_homeinterface"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
