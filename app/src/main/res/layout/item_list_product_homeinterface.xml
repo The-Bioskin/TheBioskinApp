@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="120dp"
-        android:src="@drawable/tay_trang"
+        android:src="@drawable/taytrang"
         app:layout_constraintLeft_toLeftOf="@id/view1"
         app:layout_constraintRight_toRightOf="@id/view1"
         app:layout_constraintTop_toTopOf="@id/view1"
