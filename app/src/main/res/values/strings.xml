@@ -10,4 +10,18 @@
     <string name="rating_title">Đánh giá sản phẩm</string>
     <string name="rating_content">Chọn sao để xếp hạng sản phẩm</string>
     <string name="rating_submit">GỬI ĐÁNH GIÁ CỦA BẠN</string>
+    <!-- Order  -->
+    <string name="order_title">Đơn hàng của tôi</string>
+    <string name="shipping_content">Đang giao hàng</string>
+    <string name="Done_content">Hoàn thành</string>
+    <string name="cancel_content">Đơn đã hủy</string>
+    <string name="id_content">Mã đơn hàng:</string>
+    <string name="order_id">XREWWKHFL</string>
+    <string name="order_product">Nước tẩy trang hoa hồng CoCoon</string>
+    <string name="order_size">500ml</string>
+    <string name="product_quantity">x2</string>
+    <string name="order_total">158.000đ </string>
+    <string name="product_price"> 78.000đ</string>
+    <string name="total_title">Thành tiền</string>
+
 </resources>
