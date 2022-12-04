@@ -13,8 +13,7 @@ android:orientation="vertical">
     android:orientation="horizontal">
     <ImageView
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/spc"/>
+        android:layout_height="100dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,8 +69,7 @@ android:orientation="vertical">
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="#FFFFFF"
-            android:src="@drawable/ic_baseline_do_disturb_on_24"/>
+            android:background="#FFFFFF"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,14 +78,12 @@ android:orientation="vertical">
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="#FFFFFF"
-            android:src="@drawable/ic_baseline_add_circle_24"/>
+            android:background="#FFFFFF"/>
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:gravity="end"
-            android:background="#FFFFFF"
-            android:src="@drawable/ic_baseline_restore_from_trash_24"/>
+            android:background="#FFFFFF"/>
 
     </TableRow>
 </TableLayout>
