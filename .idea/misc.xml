@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_account.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_category.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_change_passwordd.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_contact.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_filter.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
@@ -33,10 +34,12 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_show_product_detail.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_update_password.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/all_product_activity.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/apply_voucher_activity.xml" value="0.13677536231884058" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/custome_edittext.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/dialog_changepassword_fail.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/dialog_changepassword_success.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_cart.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_change_avatar.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_choose_birthday.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_choose_gender.xml" value="0.25" />
