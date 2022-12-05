@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="10dp">
+
     <View
         android:id="@+id/view_border"
         android:layout_width="120dp"
-        android:layout_height="150dp"
-        tools:ignore="MissingConstraints"
-        android:background="@drawable/item_corner5">
-    </View>
+        android:layout_height="180dp"
+        android:background="@drawable/item_corner5"
+        tools:ignore="MissingConstraints"></View>
+
     <ImageView
         android:id="@+id/imv_Image"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/vitamintree"
         tools:ignore="MissingConstraints"
         app:layout_constraintTop_toTopOf="@id/view_border"
@@ -31,7 +33,7 @@
         android:paddingLeft="10dp"
         android:textSize="12sp"
         android:text="250.000đ"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"/>
     <TextView
         android:id="@+id/txt_Name"
         android:layout_width="100dp"
