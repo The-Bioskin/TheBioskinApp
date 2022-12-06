@@ -19,7 +19,7 @@ import com.example.models.HotProduct;
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements HotProductAdapter.ViewHolder.OnHotProductListener {
-    ConstraintLayout ct9, ct7, ct2;
+    ConstraintLayout ct9, ct7, ct2, ct8;
     EditText searchProduct;
     RecyclerView rclHotProduct;
     ArrayList<HotProduct> hotProductsItems;
@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
         ct9 = findViewById(R.id.ct_9);
         ct7 = findViewById(R.id.ct_7);
         ct2 = findViewById(R.id.ct_2);
+        ct8 = findViewById(R.id.ct_8);
         searchProduct = findViewById(R.id.edt_SearchedProduct);
     }
 
@@ -83,6 +84,13 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, MoreHotProduct.class);
+                startActivity(intent);
+            }
+        });
+        ct8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, StoreList.class);
                 startActivity(intent);
             }
         });
