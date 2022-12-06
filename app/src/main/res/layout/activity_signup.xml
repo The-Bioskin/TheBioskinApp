@@ -71,29 +71,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/edt_FullnameInput"
                     android:layout_marginLeft="8dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-                <EditText
-                    android:id="@+id/edt_UsernameInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="35sp"
-                    android:hint="Tên đăng nhập"
-                    android:textSize="18sp"
-                    android:background="@drawable/item_corner"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:paddingLeft="50dp"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"
-                    app:layout_constraintLeft_toLeftOf="@id/edt_UsernameInput"
-                    app:layout_constraintTop_toTopOf="@id/edt_UsernameInput"
-                    app:layout_constraintBottom_toBottomOf="@id/edt_UsernameInput"
-                    android:layout_marginLeft="8dp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,29 +141,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/edt_PasswordInput"
                     android:layout_marginLeft="8dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-                <EditText
-                    android:id="@+id/edt_PasswordInputAgain"
-                    android:layout_width="match_parent"
-                    android:layout_height="35sp"
-                    android:hint="Nhập lại mật khẩu"
-                    android:textSize="18sp"
-                    android:background="@drawable/item_corner"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:paddingLeft="50dp"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_lock"
-                    app:layout_constraintLeft_toLeftOf="@id/edt_PasswordInputAgain"
-                    app:layout_constraintTop_toTopOf="@id/edt_PasswordInputAgain"
-                    app:layout_constraintBottom_toBottomOf="@id/edt_PasswordInputAgain"
-                    android:layout_marginLeft="8dp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
