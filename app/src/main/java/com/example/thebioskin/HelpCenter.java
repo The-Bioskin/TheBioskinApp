@@ -33,8 +33,9 @@ public class HelpCenter extends AppCompatActivity {
         btnContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String s = "1900 6868";
                 Intent intent = new Intent(Intent.ACTION_CALL);
-
+                intent.setData(Uri.parse(s));
                 startActivity(intent);
             }
         });

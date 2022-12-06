@@ -21,6 +21,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".StoreList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SearchProductActivity"
             android:exported="false">
             <meta-data
@@ -141,6 +148,13 @@
         </activity>
         <activity
             android:name=".SplashScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShowProductDetail"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
