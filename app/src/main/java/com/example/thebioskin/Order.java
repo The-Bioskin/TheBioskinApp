@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 public class Order extends AppCompatActivity {
 
     ImageView imvBack;
-    LinearLayout lnWaiting, lnShipping, lnDone, lnCancel;
+    LinearLayout lnWaiting, lnShipping, lnDone, lnCancel, lnRefund;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +52,13 @@ public class Order extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        lnRefund.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Order.this, OrderReturn.class);
+                startActivity(intent);
+            }
+        });
 
         lnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,5 +75,6 @@ public class Order extends AppCompatActivity {
         lnShipping = findViewById(R.id.lnDelivery);
         lnDone = findViewById(R.id.lnDone);
         lnCancel = findViewById(R.id.lnCancelled);
+        lnRefund = findViewById(R.id.lnRefunds);
     }
 }

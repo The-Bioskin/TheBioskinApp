@@ -26,6 +26,7 @@ public class ShowProductDetail extends AppCompatActivity {
         price.setText(bundle.getString("price"));
 
 
+
     }
 
     private void addEvent() {
