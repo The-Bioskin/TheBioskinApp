@@ -29,13 +29,13 @@ public class ShowProductDetail extends AppCompatActivity {
     }
 
     private void addEvent() {
-        imvBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), AllProduct.class);
-                startActivity(intent1);
-            }
-        });
+//        imvBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent1 = new Intent(getApplicationContext(), AllProduct.class);
+//                startActivity(intent1);
+//            }
+//        });
     }
 
     private void linkView() {

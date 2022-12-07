@@ -51,20 +51,20 @@ public class ForgotPassword extends AppCompatActivity {
         txt_SendAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OTPVerify.this, "OTP sẽ được gửi đến trong vài giây nữa. Vui lòng kiểm tra tin nhắn", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ForgotPassword.this, "OTP sẽ được gửi đến trong vài giây nữa. Vui lòng kiểm tra tin nhắn", Toast.LENGTH_SHORT).show();
             }
         });
         btn_OtpOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (edt_Otp.getText().toString().trim().isEmpty()){
-                    Toast.makeText(OTPVerify.this, "OTP Không hợp lệ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotPassword.this, "OTP Không hợp lệ", Toast.LENGTH_SHORT).show();
                     return;
                 }else {
-                    Toast.makeText(OTPVerify.this, "Xác nhận OTP thành công!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotPassword.this, "Xác nhận OTP thành công!", Toast.LENGTH_SHORT).show();
 //                    return;
 
-                    Intent intent = new Intent(OTPVerify.this, ChangePasswordd.class);
+                    Intent intent = new Intent(ForgotPassword.this, ChangePasswordd.class);
                     startActivity(intent);
                 }
             }
