@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class Signup extends AppCompatActivity {
     Button btn_SignUp;
-    EditText edt_FullnameInput, edt_PhoneNumberInput, edt_EmailInput, edt_PasswordInput, ;
+    EditText edt_FullnameInput, edt_PhoneNumberInput, edt_EmailInput, edt_PasswordInput ;
     CheckBox ckb_Check;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,16 +37,17 @@ public class Signup extends AppCompatActivity {
                 if (edt_FullnameInput.getText().toString().trim().isEmpty()
                         || edt_PhoneNumberInput.getText().toString().trim().isEmpty()
                         || edt_EmailInput.getText().toString().trim().isEmpty()
-                        || edt_PasswordInput.getText().toString().trim().isEmpty()){
+                        || edt_PasswordInput.getText().toString().trim().isEmpty()) {
 
-                    Toast.makeText(Register.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Signup.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                     return;
 
-                }else{
-                    Toast.makeText(Register.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Register.this, Login.class);
+                } else {
+                    Toast.makeText(Signup.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Signup.this, Login.class);
                     startActivity(intent);
                     return;
+                }
             }
         });
     }
