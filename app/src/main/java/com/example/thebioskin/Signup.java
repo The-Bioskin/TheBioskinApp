@@ -42,13 +42,16 @@ public class Signup extends AppCompatActivity {
                     Toast.makeText(Signup.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                     return;
 
-                } else {
+
+                }else{
                     Toast.makeText(Signup.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Signup.this, Login.class);
                     startActivity(intent);
                     return;
                 }
             }
-        });
+        };
+
+    });
     }
 }
