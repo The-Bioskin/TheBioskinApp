@@ -9,10 +9,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.os.Bundle;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.adapter.CartAdapter;
+import com.example.models.CartProduct;
 
 import java.util.ArrayList;
 
@@ -24,13 +27,12 @@ public class Cart extends AppCompatActivity {
     ImageView btnReturnOutCart;
     Button btnCheckoutItem;
     TextView txtSelectVoucherCart, txtNumberProduct;
-
     ImageButton btnAdd, btnMinus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.);
+        setContentView(R.layout.cart_show);
 
         linkViews();
         initData();
@@ -50,12 +52,12 @@ public class Cart extends AppCompatActivity {
     private void linkViews() {
 
         lvCart = findViewById(R.id.lvCart);
-        btnCheckoutItem = findViewById(R.id.btnCheckOutItem);
-        btnReturnOutCart = findViewById(R.id.btnReturnOutCart);
-        btnAdd = findViewById(R.id.btnAdd);
-        btnMinus = findViewById(R.id.btnMinus);
-        txtSelectVoucherCart = findViewById(R.id.txtSelectVoucherCart);
-        txtNumberProduct = findViewById(R.id.txtNumberProduct);
+        btnCheckoutItem = findViewById(R.id.btn_Order);
+        btnReturnOutCart = findViewById(R.id.btnBackCartToHome);
+//        btnAdd = findViewById(R.id.btnAdd);
+//        btnMinus = findViewById(R.id.btnMinus);
+//        txtSelectVoucherCart = findViewById(R.id.txtSelectVoucherCart);
+//        txtNumberProduct = findViewById(R.id.txtNumberProduct);
     }
 
     /*private void configRecyclerView() {
@@ -65,16 +67,13 @@ public class Cart extends AppCompatActivity {
 
     private void initData() {
         products = new ArrayList<>();
-        products.add(new CartProduct(R.drawable.img_caingot, "Cải ngọt", 17000, 1, 1));
-        products.add(new CartProduct(R.drawable.img_strawberry, "Dâu tây", 102000, 0.5, 1));
-        products.add(new CartProduct(R.drawable.img_banana, "Chuối", 27000, 1, 2));
-        products.add(new CartProduct(R.drawable.img_raspberry, "Mâm xôi đỏ", 220000, 0.5, 1));
-        products.add(new CartProduct(R.drawable.img_tomato, "Cà chua", 30000, 1, 2));
-        products.add(new CartProduct(R.drawable.img_cherry, "Cherry", 179000, 0.5, 1));
-        products.add(new CartProduct(R.drawable.img_peach, "Đào", 67000, 1, 4));
-        products.add(new CartProduct(R.drawable.img_blueberry, "Việt quất", 325000, 5, 1));
-        adapter = new CartProductAdapter(Cart.this, R.layout.cart_itemlayout, products);
-        lvProduct.setAdapter(adapter);
+        products.add(new CartProduct(R.drawable.sua_rua_mat_bioderma, 2 , "Gel Rửa Mặt Bioderma Tạo Bọt Cho Da Nhạy Cảm Sensibio Gel Moussant 200ml", 465.000));
+        products.add(new CartProduct(R.drawable.sua_rua_mat_effaclar, 3 , "Effaclar Gel rửa mặt cho da dầu mụn nhạy cảm 200ml", 335.000));
+        products.add(new CartProduct(R.drawable.nuoc_tay_trang_effaclar, 1, "Nước tẩy trang Effaclar Micellar Water Ultra Oily Skin cho da dầu, mụn nhạy cảm 400ml", 335.000));
+        products.add(new CartProduct(R.drawable.nuoc_can_bang_laroche, 1, "Nước Cân Bằng La Roche-Posay Cho Da Thường, Nhạy Cảm 200ml Soothing Lotion Sensitive Skin", 335.000));
+        products.add(new CartProduct(R.drawable.tinh_chat_kiehl, 2, "Serum Mờ Thâm Mụn & Đồng Đều Màu Da Kiehl's Clearly Corrective Dark Spot Solution", 335.000));
+        adapter = new CartAdapter(Cart.this,R.layout.item_cart, products);
+        lvCart.setAdapter(adapter);
 
 
     }
@@ -95,12 +94,5 @@ public class Cart extends AppCompatActivity {
             }
         });
 
-        txtSelectVoucherCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Cart.this, MyVoucher.class);
-                startActivity(intent);
-            }
-        });
     }
 }
