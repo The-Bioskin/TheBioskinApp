@@ -64,7 +64,7 @@ public class ForgotPassword extends AppCompatActivity {
                     Toast.makeText(ForgotPassword.this, "Xác nhận OTP thành công!", Toast.LENGTH_SHORT).show();
 //                    return;
 
-                    Intent intent = new Intent(ForgotPassword.this, ChangePasswordd.class);
+                    Intent intent = new Intent(ForgotPassword.this, UpdatePassword.class);
                     startActivity(intent);
                 }
             }

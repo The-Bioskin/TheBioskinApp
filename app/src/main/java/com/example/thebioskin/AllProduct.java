@@ -82,7 +82,6 @@ public class AllProduct extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Product p = (Product) allProductAdapter.getItem(position);
-//                showProductDetail(p);
                 Intent intent = new Intent(AllProduct.this, ShowProductDetail.class);
                 intent.putExtra("name", p.getProductName());
                 intent.putExtra("price", p.getProductPrice());

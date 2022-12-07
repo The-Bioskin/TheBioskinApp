@@ -59,6 +59,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/item_corner"
                 android:ems="10"
+                android:password="true"
                 android:hint="     Mật khẩu"
                 android:textSize="18dp"
                 android:padding="8dp"

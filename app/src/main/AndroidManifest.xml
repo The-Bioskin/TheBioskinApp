@@ -93,6 +93,20 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".UpdatePassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderReturn"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".OrderConfirm"
             android:exported="false">
             <meta-data
