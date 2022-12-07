@@ -17,7 +17,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFE3E8"
-                android:id="@+id/btnBack"
+                android:id="@+id/btnBackCartToHome"
                 android:src="@drawable/ic_baseline_arrow_back_24"/>
             <TextView
                 android:layout_width="90dp"
@@ -45,10 +45,10 @@
         </TableRow>
     </TableLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:id="@+id/recyclerCart"/>
+        android:id="@+id/lvCart"/>
 
     <TableLayout
         android:layout_width="match_parent"
