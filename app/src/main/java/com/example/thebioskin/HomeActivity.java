@@ -1,19 +1,17 @@
 package com.example.thebioskin;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ListView;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.adapter.HotProductAdapter;
-import com.example.adapter.ProductAdapter;
 import com.example.models.HotProduct;
 
 import java.util.ArrayList;
@@ -21,6 +19,7 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity implements HotProductAdapter.ViewHolder.OnHotProductListener {
     ConstraintLayout ct9, ct7, ct2, ct8;
     EditText searchProduct;
+    ImageView imv_Notifications, imv_ShoppingCart;
     RecyclerView rclHotProduct;
     ArrayList<HotProduct> hotProductsItems;
     HotProductAdapter hotProductAdapter;
@@ -55,6 +54,8 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
         ct7 = findViewById(R.id.ct_7);
         ct2 = findViewById(R.id.ct_2);
         ct8 = findViewById(R.id.ct_8);
+        imv_Notifications = findViewById(R.id.imv_Notifications);
+        imv_ShoppingCart = findViewById(R.id.imv_ShoppingCart);
         searchProduct = findViewById(R.id.edt_SearchedProduct);
     }
 
@@ -91,6 +92,20 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, StoreList.class);
+                startActivity(intent);
+            }
+        });
+        imv_Notifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+        imv_ShoppingCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Cart.class);
                 startActivity(intent);
             }
         });

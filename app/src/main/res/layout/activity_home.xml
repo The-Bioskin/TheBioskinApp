@@ -48,6 +48,7 @@
                     app:layout_constraintTop_toTopOf="@id/edt_SearchedProduct"
                     app:layout_constraintLeft_toLeftOf="@id/edt_SearchedProduct"
                     android:layout_marginLeft="5dp"/>
+
                 <ImageView
                     android:id="@+id/imv_ShoppingCart"
                     android:layout_width="wrap_content"
