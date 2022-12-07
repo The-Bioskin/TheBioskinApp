@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Intent intent = new Intent(Login.this, HomePage.class);
+                Intent intent = new Intent(Login.this, HomeActivity.class);
                 startActivity(intent);
                 }
 
@@ -46,14 +46,14 @@ public class Login extends AppCompatActivity {
         txt_ForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, ForgetPassword.class);
+                Intent intent = new Intent(Login.this, ForgotPassword.class);
                 startActivity(intent);
             }
         });
         txt_RegisterNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Register.class);
+                Intent intent = new Intent(Login.this, Signup.class);
                 startActivity(intent);
             }
         });
