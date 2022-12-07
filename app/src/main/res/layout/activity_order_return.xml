@@ -43,7 +43,7 @@
             android:fontFamily="@font/roboto_bold"
             android:textSize="20dp"
             android:textColor="#F38375"
-            android:text="@string/shipping_content"
+            android:text="@string/return_title"
             android:gravity="center"
             android:paddingBottom="2dp"/>
         <ImageView
@@ -62,7 +62,6 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -140,8 +139,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/txtSize"
@@ -150,17 +149,15 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="@string/order_size"
                             android:textSize="16dp" />
-
                         <TextView
                             android:id="@+id/txtQuantity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_bold"
-                            android:paddingLeft="160dp"
                             android:text="@string/product_quantity"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:paddingLeft="160dp" />
                     </LinearLayout>
-
                     <TextView
                         android:id="@+id/txtProductPrice"
                         android:layout_width="match_parent"
@@ -168,6 +165,7 @@
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/product_price"
                         android:textSize="16dp" />
+
 
 
                 </LinearLayout>
@@ -211,11 +209,15 @@
                     android:background="#C8C8D5"
                     app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -226,57 +228,37 @@
                     android:background="#C8C8D5"
                     app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2" />
 
-                <Button
-                    android:id="@+id/btnReturn"
-                    android:layout_width="110dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="64dp"
-                    android:background="@drawable/bg_order_btn"
-
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Hoàn trả"
-                    android:textAllCaps="false"
-                    android:textSize="14sp"
-                    app:cornerRadius="10dp"
-                    app:layout_constraintEnd_toStartOf="@+id/txt_return"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
-
-
-                <TextView
-
-                    android:id="@+id/txt_return"
-                    android:layout_width="180dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/return_text"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view3" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/return_day_title"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/return_day"
+                        android:textSize="14dp" />
+
+                   </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnDone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
-
-            android:background="@drawable/bg_order_btn"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Hoàn thành"
-            android:textAllCaps="false"
-            android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            tools:layout_editor_absoluteX="-35dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 </LinearLayout>
