@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.adapter.CategoryAdapter;
@@ -35,6 +36,8 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
     RecyclerView rclCategory;
     ArrayList<com.example.models.Category> categoryItems;
     CategoryAdapter categoryAdapter;
+    //Notification
+    ImageView imv_Notifications, imv_ShoppingCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +96,9 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
         searchProduct = findViewById(R.id.edt_SearchedProduct);
         //More
         txtMore = findViewById(R.id.txt_More);
+        //Notification
+        imv_Notifications = findViewById(R.id.imv_Notifications);
+        imv_ShoppingCart = findViewById(R.id.imv_ShoppingCart);
     }
 
     private void addEvents() {
@@ -135,6 +141,20 @@ public class HomeActivity extends AppCompatActivity implements HotProductAdapter
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, Category.class);
+                startActivity(intent);
+            }
+        });
+        imv_Notifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+        imv_ShoppingCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Cart.class);
                 startActivity(intent);
             }
         });
