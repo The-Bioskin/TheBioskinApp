@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/bg_indicator.xml" value="0.183" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/custom_thumb.xml" value="0.2195" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/custome_edt.xml" value="0.2195" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.1" />
@@ -23,6 +24,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_logout.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_my_voucher.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_notification.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_order.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/activity_order_cancel.xml" value="0.25" />
@@ -41,6 +43,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/custome_edittext.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/dialog_changepassword_fail.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/dialog_changepassword_success.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/fragmanet_photo.xml" value="0.2359375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_cart.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_change_avatar.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_choose_birthday.xml" value="0.25" />
@@ -53,6 +56,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/item_onboarding_container.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/order_confirm.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/payment.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/related_category_item.xml" value="0.2359375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/layout/related_products_item.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TheBioskin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2195" />
       </map>

@@ -12,6 +12,7 @@
     <string name="rating_submit">GỬI ĐÁNH GIÁ CỦA BẠN</string>
     <!-- Order  -->
     <string name="order_title">Đơn hàng của tôi</string>
+    <string name="return_title">Hoàn trả</string>
     <string name="shipping_content">Đang giao hàng</string>
     <string name="Done_content">Hoàn thành</string>
     <string name="cancel_content">Đơn đã hủy</string>
@@ -23,4 +24,11 @@
     <string name="order_total">158.000đ </string>
     <string name="product_price"> 78.000đ</string>
     <string name="total_title">Thành tiền</string>
+    <string name="return_text">Nếu sản phẩm bị lỗi bạn có thể yêu cầu hoàn trả sản phẩm mới</string>
+    <string name="cancel_day_title">Ngày hủy:</string>
+    <string name="return_day_title">Ngày hoàn trả:</string>
+    <string name="cancel_day">19/11/2022</string>
+    <string name="return_day">17/11/2022</string>
+
+
 </resources>

@@ -52,23 +52,20 @@ public class AllProduct extends AppCompatActivity {
         allProductAdapter.add(new com.example.models.Product(R.drawable.tay_da_chet_neutrogena,"Tẩy Da Chết Neutrogena Visibly Clear Daily Scrub 150ml","220.000 đ","3/5", "45 ratings"));
         allProductAdapter.add(new com.example.models.Product(R.drawable.tay_da_chet_gel_exfoliant,"Gel Tẩy Tế Bào Chết Bio-essence Dưỡng Da Tươi Trẻ Bio-Essence Renew Exfoliating Gel 60g ","569.000 đ","4/5", "45 ratings"));
 
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_bioderma,"Gel Rửa Mặt Bioderma Tạo Bọt Cho Da Nhạy Cảm Sensibio Gel Moussant 200ml","396.000 đ","5/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_clear_pore,"Sữa Rửa Mặt Cho Da Mụn Và Thu Nhỏ Lỗ Chân Lông Clear Pore Normaling Cleanser 177ml","465.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_effaclar,"Effaclar Gel rửa mặt cho da dầu mụn nhạy cảm 200ml","396.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_skin_balancing,"Sữa Rửa Mặt Cân Bằng Độ Ẩm Và Giảm Dầu Skin Balancing Oil-Reducing Cleanser 237ml","220.000 đ","3/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_vichy,"Sữa Rửa Mặt Vichy Dạng Gel Làm Sạch Sâu Giảm Bã Nhờn Normaderm Phytosolution Intensive Purifying Gel 200ml","569.000 đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.nuoc_can_bang_laroche,"Nước Cân Bằng La Roche-Posay Cho Da Thường, Nhạy Cảm 200ml Soothing Lotion Sensitive Skin","370.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.nuoc_can_bang_vichy,"Nước Cân Bằng Vichy Giảm Bóng Dầu, Se Lỗ Chân Lông 200ml Normaderm Purifying Pore-Tightening Lotion","470.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.nuoc_can_bang_bioderma,"Nước Hoa Hồng Bioderma Dành Cho Da Nhạy Cảm 250ml Sensibio Tonique","350.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.nuoc_can_bang_neutrogena,"Nước Hoa Hồng Neutrogena Không Chứa Cồn 150ml Alcohol Free Toner","150.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.tinh_chat_laroche_possay,"Tinh Chất La Roche-Posay Phục Hồi Độ Ẩm, Săn Chắc Da 30ml Hyalu B5 Serum","850.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.tinh_chat_vichy,"Serum Vichy Khoáng Phục Hồi Chuyên Sâu Mineral 89 50ml Mineral 89 Serum","750.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.tinh_chat_neutrogena,"Tinh chất dưỡng ẩm Neutrogena Hydro Boost Hydrating Serum 30ml","400.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.tinh_chat_kiehl,"Serum Mờ Thâm Mụn & Đồng Đều Màu Da Kiehl's Clearly Corrective Dark Spot Solution","1.700.000đ","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.xit_co_the_lavadin,"Kem Dưỡng La Roche-Posay Cicaplast Baume B5 Soothing Repairing Balm 40ml ","285000","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.xit_co_the_bi_dao,"Paula's choice Clear Oil-Free Moisturizer 60ml","809000","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.xit_co_the_angel,"Kem dưỡng ẩm Neutrogena Hydro Boost Water Gel 50g","274000","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.xit_co_the_bacha,"Kem dưỡng Bioderma Sebium Sensitive 30ml","410000","4/5", "45 ratings"));
+        allProductAdapter.add(new com.example.models.Product(R.drawable.xit_co_the_pepermint,"Kem Dưỡng Kiehl’s Ultra Facial Oil-Free Gel-Cream 50ml","750000","4/5", "45 ratings"));
 
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_bioderma,"Gel Rửa Mặt Bioderma Tạo Bọt Cho Da Nhạy Cảm Sensibio Gel Moussant 200ml","396.000 đ","5/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_clear_pore,"Sữa Rửa Mặt Cho Da Mụn Và Thu Nhỏ Lỗ Chân Lông Clear Pore Normaling Cleanser 177ml","465.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_effaclar,"Effaclar Gel rửa mặt cho da dầu mụn nhạy cảm 200ml","396.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_skin_balancing,"Sữa Rửa Mặt Cân Bằng Độ Ẩm Và Giảm Dầu Skin Balancing Oil-Reducing Cleanser 237ml","220.000 đ","3/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_vichy,"Sữa Rửa Mặt Vichy Dạng Gel Làm Sạch Sâu Giảm Bã Nhờn Normaderm Phytosolution Intensive Purifying Gel 200ml","569.000 đ","4/5", "45 ratings"));
-
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_bioderma,"Gel Rửa Mặt Bioderma Tạo Bọt Cho Da Nhạy Cảm Sensibio Gel Moussant 200ml","396.000 đ","5/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_clear_pore,"Sữa Rửa Mặt Cho Da Mụn Và Thu Nhỏ Lỗ Chân Lông Clear Pore Normaling Cleanser 177ml","465.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_effaclar,"Effaclar Gel rửa mặt cho da dầu mụn nhạy cảm 200ml","396.000 đ","4/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_skin_balancing,"Sữa Rửa Mặt Cân Bằng Độ Ẩm Và Giảm Dầu Skin Balancing Oil-Reducing Cleanser 237ml","220.000 đ","3/5", "45 ratings"));
-        allProductAdapter.add(new com.example.models.Product(R.drawable.sua_rua_mat_vichy,"Sữa Rửa Mặt Vichy Dạng Gel Làm Sạch Sâu Giảm Bã Nhờn Normaderm Phytosolution Intensive Purifying Gel 200ml","569.000 đ","4/5", "45 ratings"));
         lvAllProduct.setAdapter(allProductAdapter);
     }
 

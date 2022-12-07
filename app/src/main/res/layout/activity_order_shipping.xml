@@ -62,6 +62,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -139,8 +140,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:padding="10dp">
 
                         <TextView
                             android:id="@+id/txtSize"
@@ -149,15 +150,17 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="@string/order_size"
                             android:textSize="16dp" />
+
                         <TextView
                             android:id="@+id/txtQuantity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_bold"
+                            android:paddingLeft="160dp"
                             android:text="@string/product_quantity"
-                            android:textSize="16dp"
-                            android:paddingLeft="160dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
+
                     <TextView
                         android:id="@+id/txtProductPrice"
                         android:layout_width="match_parent"
@@ -165,7 +168,6 @@
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/product_price"
                         android:textSize="16dp" />
-
 
 
                 </LinearLayout>
@@ -215,9 +217,6 @@
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toBottomOf="@+id/view2">
 
-
-
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <View
@@ -228,7 +227,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2" />
 
                 <Button
-                    android:id="@+id/btnCancel"
+                    android:id="@+id/btnReturn"
                     android:layout_width="110dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="16dp"
@@ -236,25 +235,22 @@
                     android:background="@drawable/bg_order_btn"
 
                     android:fontFamily="@font/roboto_bold"
-                    android:text="Hủy"
+                    android:text="Hoàn trả"
                     android:textAllCaps="false"
                     android:textSize="14sp"
                     app:cornerRadius="10dp"
-                    app:layout_constraintEnd_toStartOf="@+id/btnRate"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_return"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-                <Button
-                    android:id="@+id/btnRate"
-                    android:layout_width="110dp"
+
+                <TextView
+
+                    android:id="@+id/txt_return"
+                    android:layout_width="180dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="44dp"
-
-                    android:background="@drawable/bg_order_btn"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Đánh giá"
-                    android:textAllCaps="false"
-
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/return_text"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view3" />
@@ -262,11 +258,25 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+
+            android:background="@drawable/bg_order_btn"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Hoàn thành"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="-35dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </LinearLayout>
