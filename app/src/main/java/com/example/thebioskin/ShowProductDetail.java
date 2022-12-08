@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.models.HotProduct;
+
 public class ShowProductDetail extends AppCompatActivity {
     ImageView imvBack;
     @Override
@@ -24,7 +26,6 @@ public class ShowProductDetail extends AppCompatActivity {
         img.setImageResource(bundle.getInt("image"));
         name.setText(bundle.getString("name"));
         price.setText(bundle.getString("price"));
-
 
 
     }
